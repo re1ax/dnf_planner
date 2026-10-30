@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.pl text eol=lf
+*.pddl text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+Makefile text eol=lf
+*.deb binary

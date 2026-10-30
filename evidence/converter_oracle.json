@@ -1,0 +1,1518 @@
+{
+  "target": "cpa.pddl2pl (original reference binary; not shipped)",
+  "sha256": "87075cfed30f766382627498726423aea875565798f1e416602e9226a85b2163",
+  "timeout_seconds": 3,
+  "records": [
+    {
+      "case": "basic",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/basic/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "8c9c7e8e7614ffcdb9fc3623831b1468c0a8b7520932cc5e990e7bae93a5703e",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "pre_or",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/pre_or/output.pl",
+      "output_bytes": 1337,
+      "output_sha256": "f2668e2baac00e81fad31ceff6b1059f33f0591d13d8f8340a54b7e2230a5561",
+      "input_sha256": "77c3836e8033893de296fa8720165437ff270aa996578f87fd346c1564de1b2d",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "pre_not_and",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/pre_not_and/output.pl",
+      "output_bytes": 1346,
+      "output_sha256": "6a82a836d78b3e41ae3371b69f3bbcfe20ced0304dcbae56c994c0e33c03500b",
+      "input_sha256": "efa90a07a14fbf3a62d239b5d5cb9d22ec09abbe03d492b1974750edcf545c54",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "pre_imply",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/pre_imply/output.pl",
+      "output_bytes": 1335,
+      "output_sha256": "81c322f5e875067ea6f545e025c9bdbc7fc67ad5577574ca20e022e3cfbcd323",
+      "input_sha256": "d29c916a8664a898d1af240ced5034e2ae88f7e8e6aa6ddc35664be1f5f3cea2",
+      "observations": "Accepted but emits uppercase NOT (...) inside cpa_or, not normal neg(...)."
+    },
+    {
+      "case": "pre_equality",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/pre_equality/output.pl",
+      "output_bytes": 1420,
+      "output_sha256": "ec7a26ef3ab84c0732f7adc585856b7ef677b30fc9a78b5c2b938ba8ad527889",
+      "input_sha256": "0529b1b6926e7c4c8e8e0f25d041c9963775704329d2c7c3853f7b2ccfbea910",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "pre_forall",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/pre_forall/output.pl",
+      "output_bytes": 1257,
+      "output_sha256": "f945e4502c6a06c026d74aeaabf9a7ee2d99fe415c2fc4d9462649f80f2977a9",
+      "input_sha256": "071eef747c7645e71d29fc18f18e38624c18a3fbfcb0edb09add42adb889bdc6",
+      "observations": "Accepted but serializes quantifier as cpa_forall?x(...), not quantifier expansion."
+    },
+    {
+      "case": "pre_exists",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/pre_exists/output.pl",
+      "output_bytes": 1256,
+      "output_sha256": "f13ff1e38d84a3f76f8dc1e0fbc52b6683e2cd50a3c0f97c5a89acbab68a1553",
+      "input_sha256": "6cfedb0decc627781e6751950924df8257dc3a3e2cf92593d6fce9f13ed0a5dd",
+      "observations": "Accepted but serializes quantifier as cpa_exists?x(...), not quantifier expansion."
+    },
+    {
+      "case": "effect_when",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/effect_when/output.pl",
+      "output_bytes": 1366,
+      "output_sha256": "d065f82e3cf9a231864951e662f820976c2ca3788e086650a447b9b97b607d6d",
+      "input_sha256": "0b0af2721ef2f7cd3743d76ae7edfdca6a1628317890b0aa9293a88032eaa887",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "effect_forall",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/effect_forall/output.pl",
+      "output_bytes": 1252,
+      "output_sha256": "9caabefc0244e4421fbe677a3032ec842eda0d5356195e6c7509f4222752475b",
+      "input_sha256": "8f31fc6b34ead2f56e31311d4b7d56d6144b861a9e231b9fbb23e5c855aaab4d",
+      "observations": "Accepted but serializes quantifier as cpa_forall?x(...), not quantified effect expansion."
+    },
+    {
+      "case": "effect_nested",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"and\" on line 1\n",
+      "input_sha256": "4d97ace3b7207ec331ced610ea517c91ff411d20443e0be2793a2db930ee4fd4",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "effect_forall_when",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/effect_forall_when/output.pl",
+      "output_bytes": 1274,
+      "output_sha256": "92bfd5cdc3b3d8a84a1bb9dc43648952e38066bddc1ca44271fea4a936a36ec5",
+      "input_sha256": "afe7759594204b5e811753d90ff8a51ddd0e7c052cd9387fe11f1fbb1a424ef0",
+      "observations": "Accepted but emitted quantifier/when nesting requires interpretation; no valid quantified semantics established."
+    },
+    {
+      "case": "init_oneof",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/init_oneof/output.pl",
+      "output_bytes": 1339,
+      "output_sha256": "e4293bbadd6bc90f89dd3defd303cb8bbc640e937ddc692c4fa9a37615871658",
+      "input_sha256": "5a1b3e88ac03de0196174096226e81084ecc0788c19437047e517d155226febc",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "init_oneof_and",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/init_oneof_and/output.pl",
+      "output_bytes": 1371,
+      "output_sha256": "7fb9de118a1dd461c3831773ed1dff0776daf464a9ccf1afe1e2c778e6fb8970",
+      "input_sha256": "7e027270c55028f74e5ac1c05f6ebfa713c2e2aed39da3b0867767b7a275cf8f",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "init_or",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/init_or/output.pl",
+      "output_bytes": 1344,
+      "output_sha256": "88679d712937d2c04d08ca2cceb2b3fc516335f93498c4f8cbd0abff5cc79ee9",
+      "input_sha256": "ad47d53b9e064ba3cc6896179821b91abe4cd18563e85f75d810c834943b621d",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "init_unknown",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/init_unknown/output.pl",
+      "output_bytes": 1346,
+      "output_sha256": "4aa465f1677ec27a69945495ec922e3dce0ae2c226711c6d38b9db04eb15c9c9",
+      "input_sha256": "c2bc28a7b1325e27cc7aedaf39291dbb60ecb7963b3a4b476c2f7c3ef4695868",
+      "observations": "Accepted: emits cpa_oneof with mixed bare and singleton-list members."
+    },
+    {
+      "case": "init_neg",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/init_neg/output.pl",
+      "output_bytes": 1317,
+      "output_sha256": "3d188c5e2b552583c1bdd71d292e05079d70b3c7e6871e079f65beed264fa045",
+      "input_sha256": "8292a6bdcba18a52a640819b4af3a8da866fa7e5a840bf5d677d716bc02b403e",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "goal_bool",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/goal_bool/output.pl",
+      "output_bytes": 1406,
+      "output_sha256": "08f987b32a65902d2a437e3a43952cd6df21064086ce11cbf4553bf3cfc15836",
+      "input_sha256": "cc1644ad29b00e9fef0e415d7f665b944ab161b3f647493e45306b474068e486",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "goal_forall",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/goal_forall/output.pl",
+      "output_bytes": 1324,
+      "output_sha256": "554cd334a0410c03d0041d55ed0fa88c16429ac0342f80953fa8cf42df0eaca3",
+      "input_sha256": "c3b0141cb2c75e75e1e1a63c503dde0752566b4fbac045be0cab2f9492ea9b78",
+      "observations": "Accepted but emits a quantifier-shaped predicate; quantified semantics not established."
+    },
+    {
+      "case": "goal_exists",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/goal_exists/output.pl",
+      "output_bytes": 1323,
+      "output_sha256": "074c5328f008636299ff3a8f2a3f0f3d656a1dfd0b76a3290289c5c55ab2fcfe",
+      "input_sha256": "da4a9020b348f5da5126ec60804e036e47dc6f4158ae2fd0ed7450f4890137ce",
+      "observations": "Accepted but emits a quantifier-shaped predicate; quantified semantics not established."
+    },
+    {
+      "case": "derived",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/derived/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "71a0078c7c3c94df15a6b7ad3ed8a8836d99f72d74c3dec8d9cc7d0931e704f2",
+      "observations": "Accepted but derived rule is absent: output is byte-identical to basic case."
+    },
+    {
+      "case": "functions",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "SCANNER ERROR:  at symbol \":\" on line 1\n",
+      "input_sha256": "90dfebecf8cda8ccc7c629d84c0f2a199fe4cd5b9a25d577e42f42626a769ccd",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "numeric_effect",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "SCANNER ERROR:  at symbol \":\" on line 1\n",
+      "input_sha256": "ec6f1c8a5f03804c2c88bcf3a33773d0df901580859c81804da511e0e79fae47",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "durative",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "SCANNER ERROR:  at symbol \":\" on line 1\n",
+      "input_sha256": "3187f22bb50eb4852e7cf3ab78f36bc8e18e7e77a03d5724a46362dd6613e9c8",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "probabilistic",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"0\" on line 1\n",
+      "input_sha256": "eb9d8214273120a2db949fb9e670d6fa635b6169fe7c131b836acc3a4791e814",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "untyped",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/untyped/output.pl",
+      "output_bytes": 1319,
+      "output_sha256": "64a2a9969d3ea1e7b1a23967e31716abf49e3d7f7ea491608bb340045085c22d",
+      "input_sha256": "0ff05f308307960fbdeb98869b3357bf6f3ddfbd3eaf12564a0f1e7828b161a9",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "constants",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/constants/output.pl",
+      "output_bytes": 1342,
+      "output_sha256": "9fe53ee80e0490a7d793d3724e40e066a31f596afdb354e8f84e342deb3832c2",
+      "input_sha256": "6cf9f4115f51681edc20c250cc9e8134cac3183bf67b6df5b6f212c111be5727",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "inheritance",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/inheritance/output.pl",
+      "output_bytes": 1355,
+      "output_sha256": "522894997a90ef2bdea55a6e75fb5bc5d6a89760f00ca81d8c297e5cacc30080",
+      "input_sha256": "ea0d2b9db8b18e53fa1dd4d41acc81ff020953712dd0af1fc6c88676b5c5f18a",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "either",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/either/output.pl",
+      "output_bytes": 1295,
+      "output_sha256": "bd4a0da22a7eb3af7497518faa9d7177943394193500cfb5ca8739f12c39dea8",
+      "input_sha256": "59457b42c4443b4c96eb74997da33a334b7a53304be7639d331dedcc230140f5",
+      "observations": "Accepted but type guards concatenate without comma: cpa_dog(X)cpa_cat(X); emitted Prolog is malformed."
+    },
+    {
+      "case": "missing_parameters",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/missing_parameters/output.pl",
+      "output_bytes": 1238,
+      "output_sha256": "1456653cc4bb359b9ad6c300f061a4b2c2e85cd7cfb8b28faeb297bf79d444b1",
+      "input_sha256": "f3c60caddd856f575f43d58b43d6444b7b306679e7040d5f26d92bf9778689b6",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "missing_precondition",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/missing_precondition/output.pl",
+      "output_bytes": 1303,
+      "output_sha256": "bdea98b218aaad0246458e7bf816c64f3d419c9e750859f18469907ac68340d6",
+      "input_sha256": "566caa842f816ae15e48e575fdf7310e8eb39dd5048b80b079a2f179f662a2e4",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "missing_effect",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/missing_effect/output.pl",
+      "output_bytes": 1303,
+      "output_sha256": "f3fe3f258a88d0a0455136ff0052e005825dbc8bc4914eb7972655dd39d0d676",
+      "input_sha256": "c323fadda7429f7e32265d38ea179e80dcc61bdebb9587b2838b8dbd1ce02918",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "empty_action",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/empty_action/output.pl",
+      "output_bytes": 1228,
+      "output_sha256": "7e012d0cff57ee248829dd35a4d84907006bc135ba68a9038cf12a3065e4b190",
+      "input_sha256": "1ba46ebddbc1d9719a0a03dfef23ac944051092c749db47c189b3439f3e6744b",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "empty_init_goal",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/empty_init_goal/output.pl",
+      "output_bytes": 1288,
+      "output_sha256": "ff9bd82e5f6a085e1c751018f4f1d3d22036654761bfd7dd05f85d1861e6a4db",
+      "input_sha256": "f364ed71d862b2ae4a71824cc41664be169f2ccbd351d0aed5ccfaf3ee133e8a",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "case_hyphen_numeric",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/case_hyphen_numeric/output.pl",
+      "output_bytes": 1374,
+      "output_sha256": "937888f6b7735ed5822d832dbccee33edfc4c423b4983c2d2e1e23c3c1b22a35",
+      "input_sha256": "1540a8fabc00a1bbfdac5329d0558089074e2ae19493e581802e5d4de010f0ac",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "goal_imply",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/goal_imply/output.pl",
+      "output_bytes": 1342,
+      "output_sha256": "b254a517d407948acc45a29312d3d4914b8c0411ef7776e46b30103578cef98a",
+      "input_sha256": "f54e2c5d758da83496fd5b5e5345b479500af86ba8709bf40514ec3be44d721b",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "pre_nested_quantifier",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/pre_nested_quantifier/output.pl",
+      "output_bytes": 1302,
+      "output_sha256": "071f416812a0f86a0195b1c63167b93638ed64d98a6448845b1fe8257de20520",
+      "input_sha256": "6c45427420d579cda2864e26973d7eff219dc3b631d4c80cc96ce9b79bf07cc1",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "crlf",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "SCANNER ERROR:  at symbol \"\n\" on line 1\n",
+      "output": "tests/converter_cases/crlf/output.pl",
+      "output_bytes": null,
+      "output_sha256": null,
+      "input_sha256": "16c455b2b4a39f19aee05f40f01d5cce651e074b446f2b8833a9e4a5ac72fdb8",
+      "observations": "Scanner rejects CRLF; no output file."
+    },
+    {
+      "case": "uppercase_keywords",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"DEFINE\" on line 1\n",
+      "input_sha256": "8f25d6ce068f6e80fc7f5923d1a5f0c77cd4ee7f28d217989163e458827cbe3d",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "init_single_atom",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"p\" on line 2\n",
+      "input_sha256": "4953eb934b2479f008b3eebef8540ee8eb4e0c7b4cc0a8bd669749651164860e",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "init_top_or",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/init_top_or/output.pl",
+      "output_bytes": 1344,
+      "output_sha256": "88679d712937d2c04d08ca2cceb2b3fc516335f93498c4f8cbd0abff5cc79ee9",
+      "input_sha256": "6d704abcbe6c7c7046905581dd6900f96ec7f71c71a9e4766f88fc3897e85e82",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "init_top_oneof",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"oneof\" on line 2\n",
+      "input_sha256": "8c5b07b4552bd24cf26ec0a2899dafdd4c108334f92725e5719838e56ab7acdd",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "predicate_binary",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/predicate_binary/output.pl",
+      "output_bytes": 1342,
+      "output_sha256": "97b68da1394f2f06eeb32cb48b2a62575864a7b830a6139e3bfe0cfebf6d76b6",
+      "input_sha256": "d6e52aea89a1ae2c095429983e23d71db1caab873aa0594be011e6d398fa957a",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "no_requirements",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/no_requirements/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "849a3456704c515382b2f950974d8d017fd0efb9aa5f742363ab191eec729f78",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "action_empty_condition",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/action_empty_condition/output.pl",
+      "output_bytes": 1303,
+      "output_sha256": "bdea98b218aaad0246458e7bf816c64f3d419c9e750859f18469907ac68340d6",
+      "input_sha256": "dceb5e509ad68a6092ae485167f5ff4472d8564fddbedb00a55fecb6ac577f3a",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "action_zero_parameters",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/action_zero_parameters/output.pl",
+      "output_bytes": 1238,
+      "output_sha256": "1456653cc4bb359b9ad6c300f061a4b2c2e85cd7cfb8b28faeb297bf79d444b1",
+      "input_sha256": "ecebbdaa7622e507e13296c61b9de424a51edc616b7230f96e8024577dbb9b5c",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "init_oneof_neg",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/init_oneof_neg/output.pl",
+      "output_bytes": 1344,
+      "output_sha256": "ca459e8a0c2aff32faf690f32bab6d59b7d9517b636200d5b6f512b93b320402",
+      "input_sha256": "866ba462f3f6a91318c8f8e014300803956b154113560b20642cc46986e450c7",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "unknown_negative",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/unknown_negative/output.pl",
+      "output_bytes": 1346,
+      "output_sha256": "0638b9911f02e36c085abfc1d4d82484e615c7cece073017b8aaa6f8f77a13c6",
+      "input_sha256": "db24020f09b3c1060d8aa40c55fbb541167877bc565c871c4811e7dce70730bf",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "effect_or",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"or\" on line 1\n",
+      "input_sha256": "6d65f7921b13824e4e4d55bf280fe6618e9bebb19dab356e8ff76e8424f1c603",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "objects_numeric",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"1\" on line 2\n",
+      "input_sha256": "1519ea35255e646fbf93b4ea29d79f52fadc09e918949b7b0d67702d98583668",
+      "observations": "Accepted/rejected conversion observation only; no downstream semantic claim."
+    },
+    {
+      "case": "grammar_field_order_0",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_field_order_0/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "8c9c7e8e7614ffcdb9fc3623831b1468c0a8b7520932cc5e990e7bae93a5703e"
+    },
+    {
+      "case": "grammar_field_order_1",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":precondition\" on line 1\n",
+      "input_sha256": "f5e9a044029ddd94c6558fc276d20c67183523fbd0ad62b6a1add2749e04d297"
+    },
+    {
+      "case": "grammar_field_order_2",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":parameters\" on line 1\n",
+      "input_sha256": "be4208361af4f8b42721f89b9fc51effd64f98e6a050addc33e8486bdc9b06fb"
+    },
+    {
+      "case": "grammar_field_order_3",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":parameters\" on line 1\n",
+      "input_sha256": "f81b88e0f1938209bd2fb43d725bebe1e634612c9b403cdb26e0556b2a1c920a"
+    },
+    {
+      "case": "grammar_field_order_4",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":parameters\" on line 1\n",
+      "input_sha256": "c11ec8bc535b8f9ee522654a5db7ef5232ac5d47264fecfe7a3e58cd99623b4b"
+    },
+    {
+      "case": "grammar_field_order_5",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":precondition\" on line 1\n",
+      "input_sha256": "31f3fa5d23a57b3afdb364feb9c6cf1c209bac4f76e73a17b33a29b44e9a09ad"
+    },
+    {
+      "case": "grammar_requirement_empty",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \")\" on line 1\n",
+      "input_sha256": "47dea19c0e87c8f671a787407a5adabca29719ae14501a6c3c9206ef71e9955f"
+    },
+    {
+      "case": "grammar_requirement_adl",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_requirement_adl/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "b0b133f9ec523d8055c8f4a11334621fc1602470fb52c2b6cc658195038750ae"
+    },
+    {
+      "case": "grammar_requirement_equality",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_requirement_equality/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "44da52761687fed12e37ddab99c2faf83ddb21b4314a02c8350f11ba777dab87"
+    },
+    {
+      "case": "grammar_requirement_negative-preconditions",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_requirement_negative-preconditions/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "d2cff7858e20666215980f1353c75d6a2e90d0e5a3b368fceb0150ae510ac5f2"
+    },
+    {
+      "case": "grammar_requirement_disjunctive-preconditions",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_requirement_disjunctive-preconditions/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "b23d5d30f46bbb55f2f0ad42f6b64f4eb56b03efd1a89507c0d3c4061fc0f575"
+    },
+    {
+      "case": "grammar_requirement_conditional-effects",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_requirement_conditional-effects/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "11fb25e8ca5f8adaca31eea008cda018610b1c806a2c4042b6dc78dc6e6daec9"
+    },
+    {
+      "case": "grammar_requirement_existential-preconditions",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":existential-preconditions\" on line 1\n",
+      "input_sha256": "b0703ab5877f01c0cd0dec987d94eee75f1bc9ba3e33070707fc337463abe1bd"
+    },
+    {
+      "case": "grammar_requirement_universal-preconditions",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":universal-preconditions\" on line 1\n",
+      "input_sha256": "0fa825381828c11965e4d8be277de2f8ceb93c1d35c5ddbf457fe976aa0c0f76"
+    },
+    {
+      "case": "grammar_requirement_quantified-preconditions",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":quantified-preconditions\" on line 1\n",
+      "input_sha256": "e13822185f207ef709a3c102287c07869ea738a00ba7d6b083d1d27984785d66"
+    },
+    {
+      "case": "grammar_requirement_domain-axioms",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":domain\" on line 1\n",
+      "input_sha256": "6289d858a5b9a7d92f305bad78da63e3305e989a3d6906bb61ed1d4b7a77ffec"
+    },
+    {
+      "case": "grammar_requirement_fluents",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "SCANNER ERROR:  at symbol \":\" on line 1\n",
+      "input_sha256": "d3892373bfa45b77699b9f9e29eaf7ab6ed3f5298739eebb4f2ef338777f43c2"
+    },
+    {
+      "case": "grammar_requirement_open-world",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "SCANNER ERROR:  at symbol \":\" on line 1\n",
+      "input_sha256": "8368845088631669e597c352026a9ef31edb7ffe4c73a50301244a9d92160656"
+    },
+    {
+      "case": "grammar_no_types",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type thing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_no_types/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "c4418190c9ee9fd2c12f7ab627b82f82d082f8ad946ded75d75ccce69b7044c3"
+    },
+    {
+      "case": "grammar_no_objects",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_no_objects/output.pl",
+      "output_bytes": 1276,
+      "output_sha256": "2b8ac5f7074ef6995de2e9b838917438dd957e8f0ff9ad4784b9c713eb183bff",
+      "input_sha256": "67f8a4fd08a300443a8dc1fac0e7185dbdf56b0c48d7424ab3170161948c8d38"
+    },
+    {
+      "case": "grammar_empty_objects",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_empty_objects/output.pl",
+      "output_bytes": 1276,
+      "output_sha256": "2b8ac5f7074ef6995de2e9b838917438dd957e8f0ff9ad4784b9c713eb183bff",
+      "input_sha256": "5e6ff6021d9f594e2894dae2a4834bf04b59d3cb52c69b935f76c65036ee7c26"
+    },
+    {
+      "case": "grammar_empty_predicates",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \")\" on line 1\n",
+      "input_sha256": "ccd9a947e4c20fd7c8d8663d22fbc5ffc5a686a88a46003f15881d2998a41d06"
+    },
+    {
+      "case": "grammar_no_predicates",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_no_predicates/output.pl",
+      "output_bytes": 1220,
+      "output_sha256": "7edb5d62fb4f73e0780484807763ca8dcee8e8545189e551335216b50b8974da",
+      "input_sha256": "89d5ac22332af8e56ed43d9c22507ecbf50d7c209922f765af32c947651500d6"
+    },
+    {
+      "case": "grammar_no_actions",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_no_actions/output.pl",
+      "output_bytes": 1153,
+      "output_sha256": "e9ca580cb8616ddc7506f0affef906b42baca75aedc7b3ff6fc6c7b6a5df9267",
+      "input_sha256": "ab6d316de234d83de165b2805dfcd0d078486617b5803332b192523ebfb115ac"
+    },
+    {
+      "case": "grammar_empty_types",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type thing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_empty_types/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "8af4c5dd310880ca8826eb79e5bdb4e24d7ce8e8622b3da7afde23061709082c"
+    },
+    {
+      "case": "grammar_empty_constants",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_empty_constants/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "edbbcc897da6ddb6096904b774e86c887ef45cd65e30432d727a6d94008a2fb5"
+    },
+    {
+      "case": "grammar_default_constant",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_default_constant/output.pl",
+      "output_bytes": 1338,
+      "output_sha256": "30000600b1bc3dbd57e265cd206b0ba8296b287f16fe10f5d34d0a8eebe69f27",
+      "input_sha256": "ca06dc1243bb9d2ffb5e18e9f86dd840f754c831ca18395f5bfeaff853fbacee"
+    },
+    {
+      "case": "grammar_type_chain",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_type_chain/output.pl",
+      "output_bytes": 1342,
+      "output_sha256": "4e4b7a3298fd32a2921ec5962bd24f16aef7b19b9d830ba16f16a4d1c78757d0",
+      "input_sha256": "3d13fcabf111cf8ff04d373d8d25458ce96bb5c3ffee7f3b5f57d38e7954f1b2"
+    },
+    {
+      "case": "grammar_derived_no_types",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_derived_no_types/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "48b42c48e434f1ed71de3a97089d8f20ddf4803a7fbc3de800c231c544e9f349"
+    },
+    {
+      "case": "grammar_init_nested_or",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_init_nested_or/output.pl",
+      "output_bytes": 1376,
+      "output_sha256": "c4b23deca215323ba73a6d8a62ce3d9a2faeb6038729a3b160b18ae082e3b66e",
+      "input_sha256": "60512d91e7759edcc8f4d1b22905cb922317e07f10726e1e3e31628f816697d5"
+    },
+    {
+      "case": "grammar_goal_nested_or",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_goal_nested_or/output.pl",
+      "output_bytes": 1376,
+      "output_sha256": "f03415574413a8e0ebc51a5810392eba11770d3cdcb04239ea98a418bd6f9da2",
+      "input_sha256": "8e857a93d4f78951aa6627804f08e516fea22be6bffb2ea890b33f312e407a94"
+    },
+    {
+      "case": "grammar_init_oneof_single",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_init_oneof_single/output.pl",
+      "output_bytes": 1325,
+      "output_sha256": "995d3a034fbc56d4864263f75f6b52012679889a590d450acfeb0269e19c59dd",
+      "input_sha256": "bd6764eafd373a0f938af79a1d2d197902568376d734e6fb8c90b70d4d197092"
+    },
+    {
+      "case": "grammar_goal_oneof_single",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_goal_oneof_single/output.pl",
+      "output_bytes": 1333,
+      "output_sha256": "2a23469768a434a77dd39c19bd8b12b47133ad3c2477bb823e0d6b14264b1f5d",
+      "input_sha256": "711afc968ed59c5d69325fb3bd5f755e5abc21d4407c5e0583dbbb56dff02c29"
+    },
+    {
+      "case": "grammar_init_oneof_empty",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_init_oneof_empty/output.pl",
+      "output_bytes": 1313,
+      "output_sha256": "0e7ccf2a3f4206ba44241974b779d39be5aad4c5efcaafeb54837047cb0b2f50",
+      "input_sha256": "713b406768252918ad5959d9119d6b287301d2581258ad92be31c1f365630d6e"
+    },
+    {
+      "case": "grammar_goal_oneof_empty",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_goal_oneof_empty/output.pl",
+      "output_bytes": 1309,
+      "output_sha256": "9591563721b48f090a667a9be934da7013e3545cd7ca00ddfc290e6606fe6c2c",
+      "input_sha256": "de579adbc7d892ebb907973311771ea244ffd62f99e0aad7e3d3cc59a585bc46"
+    },
+    {
+      "case": "grammar_init_oneof_or",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_init_oneof_or/output.pl",
+      "output_bytes": 1353,
+      "output_sha256": "d50c274de49793db76005b4bbe8df1f30e7d6f9f9c9ad0beea9b63eecdad9455",
+      "input_sha256": "db4b4ae822e842a5623e8e8fcfa273eb00d55ab55c494e658d6734e573c11926"
+    },
+    {
+      "case": "grammar_goal_oneof_or",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_goal_oneof_or/output.pl",
+      "output_bytes": 1388,
+      "output_sha256": "edda6ebcde084e761861a9e94f0b7f8b10ddb5b4adc0d8625aa689e9bab06ab7",
+      "input_sha256": "5c8e286319f73a1b3bd94f5dd91079cfb5b595d59ffec99c1b6d8207982a202e"
+    },
+    {
+      "case": "grammar_init_and_empty",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_init_and_empty/output.pl",
+      "output_bytes": 1300,
+      "output_sha256": "a86fa63e883862421c3d2b4653996c539277ee4aabc5c14d8c670b5bdb7179cf",
+      "input_sha256": "7a153313e6856381b3c3fd945098b689bfba013a3a9b87afe15b96ff85b7184f"
+    },
+    {
+      "case": "grammar_goal_and_empty",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_goal_and_empty/output.pl",
+      "output_bytes": 1300,
+      "output_sha256": "f47526c187ed9825d288bf7307fe6ecab150c68378b97e25389e5a8ac4c1a787",
+      "input_sha256": "8f27458bc04bb2a75a974af737fe23db06dcbb3d8e8c1cb535fba138bd5086e5"
+    },
+    {
+      "case": "grammar_init_not_and",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_init_not_and/output.pl",
+      "output_bytes": 1348,
+      "output_sha256": "4ae3ad3d15eaae1f57cdfd5ca7754e27e8b01c7f48e171c68f16c415da00189a",
+      "input_sha256": "a78dc2ca35df1e4067f655d88b218f737416c0cb4e272cb33270378a1b6bb432"
+    },
+    {
+      "case": "grammar_goal_not_and",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_goal_not_and/output.pl",
+      "output_bytes": 1344,
+      "output_sha256": "bc70a40672710513896109b4ea9c428d4560f3e5e00cb187e2136284ceaa45b8",
+      "input_sha256": "05a35a69bf40decf0b8b4b14fa90b36acb9fc04821ead4bb50b45ecfb1687132"
+    },
+    {
+      "case": "grammar_init_imply",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_init_imply/output.pl",
+      "output_bytes": 1342,
+      "output_sha256": "907e6e9ef7d23499d209843e9915a8f8c791531b794030bb86fe98960bacd344",
+      "input_sha256": "9b2307d87b6efe471e598f6ff7c5ebe917141b6ca5ae7740926e5026743456b7"
+    },
+    {
+      "case": "grammar_goal_imply",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_goal_imply/output.pl",
+      "output_bytes": 1342,
+      "output_sha256": "b254a517d407948acc45a29312d3d4914b8c0411ef7776e46b30103578cef98a",
+      "input_sha256": "f54e2c5d758da83496fd5b5e5345b479500af86ba8709bf40514ec3be44d721b"
+    },
+    {
+      "case": "grammar_init_equality",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_init_equality/output.pl",
+      "output_bytes": 1323,
+      "output_sha256": "303a6b3faffba4d8e981994ed77c26bdb8d85a1fe43d2d711db899c107754df5",
+      "input_sha256": "ca4ac54346fcf0193e4fb9809a55b1777268365a0ff20a084b1d820154ae1f35"
+    },
+    {
+      "case": "grammar_goal_equality",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_goal_equality/output.pl",
+      "output_bytes": 1323,
+      "output_sha256": "916cd8283bb3a30d0cbdd0129caa2d3544bbbdd16d0492f622a428b18ebcc778",
+      "input_sha256": "4620396a6735503dc0391271da1d2cffc645194aa7e06eb0c1bf52b199a880d4"
+    },
+    {
+      "case": "grammar_effect_when_single",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_effect_when_single/output.pl",
+      "output_bytes": 1334,
+      "output_sha256": "44b6ec8b018599b90ff5c0196079ba383bda8ddee15299557f393a20d5127488",
+      "input_sha256": "1553b04204050b061418a2a43912bc0ade74e18ba710f4111956206545c41615"
+    },
+    {
+      "case": "grammar_effect_when_and_single",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_effect_when_and_single/output.pl",
+      "output_bytes": 1346,
+      "output_sha256": "1f751a75da2264a90317c296bf5db5483c7ed2deed5ef30afc92ee429c117dee",
+      "input_sha256": "3f396060de2aebbd348364af91c8a0f2a6030bb89c9fe0ca410a067ed751223f"
+    },
+    {
+      "case": "grammar_effect_when_and_empty",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \")\" on line 1\n",
+      "input_sha256": "8f1e149103d96af808181c32db85c6d3884ee9a5fcf47c8d835ed7564a80e46a"
+    },
+    {
+      "case": "grammar_effect_when_and_many",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_effect_when_and_many/output.pl",
+      "output_bytes": 1414,
+      "output_sha256": "94863b923400c713af0f7f4b4115f7cad6507c1de97c45abe39c7978377ee17d",
+      "input_sha256": "b36e4f39f7899a92e434ab4ba4349f311a0fecef8078e538ca86c7e11bd7179d"
+    },
+    {
+      "case": "grammar_effect_when_or",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_effect_when_or/output.pl",
+      "output_bytes": 1359,
+      "output_sha256": "e21534f888318da004b0a4ec871104c3373054f10edef025615f8b87cdcbe459",
+      "input_sha256": "5874bd277eb33dbd0a23d6a4a7b61ddab649bc1a42e513dc20dacd9f3c53e671"
+    },
+    {
+      "case": "grammar_effect_and_when",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_effect_and_when/output.pl",
+      "output_bytes": 1361,
+      "output_sha256": "5532d3b9e6968db33bf7e32e93f6f6133c8ec7dd575a797e18d40bb79cec259c",
+      "input_sha256": "9b622c341e884f1caad0228ba045e7409ec0fc81cef51c15188fa6274dca9653"
+    },
+    {
+      "case": "grammar_effect_not_empty",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/grammar_effect_not_empty/output.pl",
+      "output_bytes": 1313,
+      "output_sha256": "f260afdf392b07c8bea731db9ed2ffb26e10d4136486542df0432a9d66d68b89",
+      "input_sha256": "4be54b6aa37a53c445422ad68f52e4553a01aa0065d1934cba74abb20ed6631d"
+    },
+    {
+      "case": "final_duplicate_types",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_duplicate_types/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "3a88d7263322a265b06840d1f3c5bb04d9434f5ecd69af6685ee93d7cb32cf97"
+    },
+    {
+      "case": "final_duplicate_predicates",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_duplicate_predicates/output.pl",
+      "output_bytes": 1274,
+      "output_sha256": "d8ce81634d1146fc61a648fcba9931a16434a03296c51922701e1d4a8dbd1736",
+      "input_sha256": "ea0bd14b35edda4c25ab9080e84305603296f394367fed86e84f521f3ae60466"
+    },
+    {
+      "case": "final_duplicate_objects",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":objects\" on line 2\n",
+      "input_sha256": "c52630fffa92ac8b82671e499032fbbbe56ccb6c8fb0bc235401abad373bcb37"
+    },
+    {
+      "case": "final_duplicate_constants",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_duplicate_constants/output.pl",
+      "output_bytes": 1330,
+      "output_sha256": "74d8823b72d72d5e5fff4399e8c2eb8f2de775f49851aab04fcd98d39bc4627f",
+      "input_sha256": "60b2f6230cd6ae420ea32f91d1c8ece5d1b70ad064b165dd6a9775bc13a09b89"
+    },
+    {
+      "case": "final_duplicate_requirements",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_duplicate_requirements/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "f5aca7ec597cfbdb3c1164ff3288c8c65af8531dd786b4c2272620536b746860"
+    },
+    {
+      "case": "final_duplicate_init",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":init\" on line 2\n",
+      "input_sha256": "096a51e2c74da5c55acdb09f114696bda87e7bb5251e6fbe7970fb5d9cd6c4c1"
+    },
+    {
+      "case": "final_duplicate_goal",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"(\" on line 2\n",
+      "input_sha256": "bfca6614ea80fe948c4409fa5ae0bc499855aba0b2676b82eb2d8b59192edf53"
+    },
+    {
+      "case": "final_duplicate_action",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_duplicate_action/output.pl",
+      "output_bytes": 1392,
+      "output_sha256": "c3f9c5d7caa32b9d152bdf1c9d80a839f0c2d599994725b98b493fc2c2cf0e71",
+      "input_sha256": "e47fe77044ad321b4f3afd6a391c4f5910348ff0ed235ef809abe43e8a43c653"
+    },
+    {
+      "case": "final_duplicate_parameters",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":parameters\" on line 1\n",
+      "input_sha256": "c19ef5a1022c2bd182485e6fee3934a490b22ff5ce028131931ae85270760f73"
+    },
+    {
+      "case": "final_duplicate_preconditions",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":precondition\" on line 1\n",
+      "input_sha256": "ff5d7b21066b2cbee204af65615fe8a4559ac1c12f174a8ce84bdba6804d5c4b"
+    },
+    {
+      "case": "final_duplicate_effects",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":effect\" on line 1\n",
+      "input_sha256": "1cdbe61ba18414d746d3fdb96dc7280a968bc68ae4e469b9af821a012607df82"
+    },
+    {
+      "case": "final_mismatched_domain",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_mismatched_domain/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "3b833375f3134c13974f583507495fb8a4cf248921b3c59c77221d3d61541633"
+    },
+    {
+      "case": "final_unknown_parent",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_parent/output.pl",
+      "output_bytes": 1343,
+      "output_sha256": "3bad4a28d56bb93f7d0f061c4f14f7a57e1c81bfb08a4ee98be5c1f85540034e",
+      "input_sha256": "dd3b864440830e4bbd0afdeccc9dfc547f25dead3bc4aa377f4efb030adeaf95"
+    },
+    {
+      "case": "final_unknown_object_type",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_object_type/output.pl",
+      "output_bytes": 1316,
+      "output_sha256": "693a880910a26b8c36f138fe0de81fe50ba964096608474a28b32dda7952a03b",
+      "input_sha256": "d7619a5e667eb5d086ac6b2d070ed622d92d8d8eb09e69d8015de3cfa7e595d0"
+    },
+    {
+      "case": "final_unknown_constant_type",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_constant_type/output.pl",
+      "output_bytes": 1332,
+      "output_sha256": "51c5c7f472e3e1c9a1b71236ea4f94721d88f62b035b4d8a384a9a07806ad0a8",
+      "input_sha256": "a1f3f211cabc6008fe92a2385fc2584f84f2b0503c3bf5a47ddeadf17bc44d41"
+    },
+    {
+      "case": "final_unknown_predicate_type",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type missing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_predicate_type/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "bc842f6521330b31522a2331fb0abffd7810f278e2ca33a8b94b39f631f3d135"
+    },
+    {
+      "case": "final_unknown_action_type",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type missing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_action_type/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "23e066a4df2dff561c61e92368e8a0c76573988b465d085f02aee704f64ca700"
+    },
+    {
+      "case": "final_unknown_predicate_effect",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_predicate_effect/output.pl",
+      "output_bytes": 1318,
+      "output_sha256": "eaff41e0ff49b26ef8417c21cf340c60a899b68f8c166416c20042ef1bbce964",
+      "input_sha256": "21383ce6d8b533ee0b430eee29f8e094b59e9dffff845b551f56cdcab30f83a0"
+    },
+    {
+      "case": "final_unknown_object_goal",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_object_goal/output.pl",
+      "output_bytes": 1318,
+      "output_sha256": "cf3463cca7ff746e86ada990d5c8ab65cfd2ef4f9c54032c46b2dbc220c505c6",
+      "input_sha256": "cac917d876a02fffab9bfd548c3e0e5b386dec9d22b7114c0d6be50c3f04448c"
+    },
+    {
+      "case": "final_unknown_variable_effect",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_variable_effect/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "7e0b7667eb6b8ca30795fff043b88d73a5b7e7c082d3855137f92f6a44bfe223",
+      "input_sha256": "2df5f3a38cb00424e2be133f554d8edf391750b47cb86997f1f2e4e7c8fde52c"
+    },
+    {
+      "case": "final_unknown_type_either",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_unknown_type_either/output.pl",
+      "output_bytes": 1357,
+      "output_sha256": "fd7778e79ac315304be170963cdbdcc3873b97e6d5a74aface753f77fe288a6b",
+      "input_sha256": "44638b1f125c349cd9775bfe7a0d656fa7324954d5fd385476a6aa6ec6beb456"
+    },
+    {
+      "case": "final_requirements_true_negation",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "SCANNER ERROR:  at symbol \":\" on line 1\n",
+      "input_sha256": "342fc7caead5ad83fa3eb108f2d497d43ee260695a922233c7124d4923018927"
+    },
+    {
+      "case": "final_requirements_quantifiers",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \":quantified-preconditions\" on line 1\n",
+      "input_sha256": "e13822185f207ef709a3c102287c07869ea738a00ba7d6b083d1d27984785d66"
+    },
+    {
+      "case": "final_requirements_extensions",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/final_requirements_extensions/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "6da1f2c046a43ba642c069c70f95c9bb2f6a6349bb34dffcda9fdddc7bbbea7d"
+    },
+    {
+      "case": "final_two_domains",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"domain\" on line 2\n",
+      "input_sha256": "427eeb22f8601fada7be527f5833be49173506c02be19148b9f7fff9c3747f00"
+    },
+    {
+      "case": "final_two_problems",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"(\" on line 3\n",
+      "input_sha256": "bb42128564525d0c6e9aa11bea179386876ed6938ac4514f5c61ae0a4285d861"
+    },
+    {
+      "case": "final_problem_first",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"problem\" on line 1\n",
+      "input_sha256": "d2146b411e1f4fc1b3cab1c2a09a3f40192b4390a69aaf6f38165895fc2a7476"
+    },
+    {
+      "case": "final_domain_only",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"\" on line 2\n",
+      "input_sha256": "e9fdc24d64e52c81243be057460dccea37507295f975eca30d5707cede5b6ce0"
+    },
+    {
+      "case": "final_problem_only",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"problem\" on line 1\n",
+      "input_sha256": "26e40b017cab76b5e190ac3e14b544c3603e0ec9797a05714c020283c43dbf97"
+    },
+    {
+      "case": "extra_requirements_constraints",
+      "returncode": 0,
+      "stdout": "System has not support constraints\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_requirements_constraints/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "b620452a17109c745f74b33de75edf39512f2567ebaaba8a6ea5fcf39ecec7a5"
+    },
+    {
+      "case": "extra_duplicate_types_inheritance",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_duplicate_types_inheritance/output.pl",
+      "output_bytes": 1341,
+      "output_sha256": "59c65946394d40866d604aa3ac2392f5fcae32d7fd8d4b7264d38f5717340761",
+      "input_sha256": "6427f5a5e1d3136ff552e53cb52f1c1af1127af38664119c259a8da73dc5cb71"
+    },
+    {
+      "case": "extra_late_types_predicate",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type thing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_late_types_predicate/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "4c874871150e490ad1b6ecdde1b3f3568404516eaa0c7c4a102d0db669ce7490"
+    },
+    {
+      "case": "extra_late_types_action",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type thing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_late_types_action/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "f776020b056298ccdf8a9cd47767c6137331c933881f82eac5df03ceca7f9478"
+    },
+    {
+      "case": "extra_bad_then_good_predicate",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type missing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_bad_then_good_predicate/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "c3cf24111a6debcf15e271fe7204bbc26692d3b359b6f0995607b5ab139ce3af"
+    },
+    {
+      "case": "extra_good_then_bad_predicate",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type missing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_good_then_bad_predicate/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "2b96079e50653782cae91050d5e9968eba07d71f05ae44b5b44babedcefd8572"
+    },
+    {
+      "case": "extra_duplicate_types_first_bad",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_duplicate_types_first_bad/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "06c2bd9e158c884df54366f7ffae81d3ee31446d2314cc74aaeedda2adaf01cf"
+    },
+    {
+      "case": "extra_duplicate_types_empty_last",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_duplicate_types_empty_last/output.pl",
+      "output_bytes": 1312,
+      "output_sha256": "a3a9b1510a574dd2ab7a26c739b104f17a022723b1436d5eb3020fb7c2b0c5d9",
+      "input_sha256": "081dc022786ddca75646c4b3a7d353583ba684bf0fb9a2ec936dc74361372755"
+    },
+    {
+      "case": "extra_duplicate_action_same_arity",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/extra_duplicate_action_same_arity/output.pl",
+      "output_bytes": 1462,
+      "output_sha256": "aead73cd3e05068fa8f459d76c22d95fbf9740bc88aa42490c88440b28bdedc2",
+      "input_sha256": "f43fd4a1058ea8b151ffbb27496d05a148466d617d5f2f8db2193e8c71fec099"
+    },
+    {
+      "case": "extra_empty_domain_name",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \")\" on line 1\n",
+      "input_sha256": "4e370e239a55e34aa576a723f16941be772ba627df480a417108e31c48506141"
+    },
+    {
+      "case": "extra_problem_extra_init_top",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"p\" on line 2\n",
+      "input_sha256": "764a1aeac053d7f58a24c1a9f01f118abe6c2f149c5a5a2450739fa91f6dab79"
+    },
+    {
+      "case": "extra_goal_list",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"(\" on line 2\n",
+      "input_sha256": "c06c545dff678b19c761427e876567f14642455f45c2d67f1acfe9c58e33c121"
+    },
+    {
+      "case": "independent_quant_missing",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type missing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/independent_quant_missing/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "83922c1384d4764051a5fb4bee609ab0a43db94d1e93e6f6f46334b795fa5d2f",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes"
+    },
+    {
+      "case": "independent_explicit_object",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type object\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/independent_explicit_object/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "cbf209df32c9989156391e0b19e5ced453766d84b4b545c623ebb075ccff5730",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes"
+    },
+    {
+      "case": "independent_type_before",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type t\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/independent_type_before/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "30bd8def3f55c830830a3e07cf652b2523c8baf4458ee3f6ad2b7ec6444520a2",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes"
+    },
+    {
+      "case": "independent_type_dup_rules",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/independent_type_dup_rules/output.pl",
+      "output_bytes": 1098,
+      "output_sha256": "4416ae8d43925459b9213dcc1092aabb7e30d2b4f7a150a8706ecee6a1fe87b2",
+      "input_sha256": "eb7ef48b2641ab4a0d858252a0b5e252e81095b4fc33af9791fd27860dc37f53",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes"
+    },
+    {
+      "case": "independent_pred_dup_missing",
+      "returncode": 0,
+      "stdout": "\nERROR: undeclared type missing\nConverting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "output": "tests/converter_cases/independent_pred_dup_missing/output.pl",
+      "output_bytes": 1001,
+      "output_sha256": "f312147a4794f17136e695a9b837a7c631284ebd1e93aa2fea6ef20c2e26fcb0",
+      "input_sha256": "2e4b90447dd4cada67d179cc07bd0f05173743e5045515b6f9e8ec9bfc9506b5",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes"
+    },
+    {
+      "case": "fix_pre_not_not",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "8cc2ec01fa475c5e8f15f792e497d0c1f66381493aa7fe2370532a049c7e5481",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_pre_not_not/output.pl",
+      "output_bytes": 1272,
+      "output_sha256": "2b32bbedbb779cdf5d5b7709d56f43c0656e416593bd9d09f77de1caaaa1adcc"
+    },
+    {
+      "case": "fix_pre_imply_not",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "02ed7fff27459fceaba8d0af360195e8911632f25c235edfb2585ef2166d2f5d",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_pre_imply_not/output.pl",
+      "output_bytes": 1292,
+      "output_sha256": "45e46f3c95960530d2d12b69180138666d02713cf56e82f2967051d9492bb5d9"
+    },
+    {
+      "case": "fix_pre_oneof",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "9ea5160484984a032f3866e8098ec06697a8da3f0e73eecde0fbb6481cc5e6dc",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_pre_oneof/output.pl",
+      "output_bytes": 1301,
+      "output_sha256": "c5dfdc760a8085afd85859c0394cb1fc08d2e980d3c64e7a93ef12d2f64dbe72"
+    },
+    {
+      "case": "fix_pre_unknown",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "e01ed9144fb4cdd9bd867e5d2c2dfe7deb2fe7d4e4804b8deca5e4f4b5b8aa13",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_pre_unknown/output.pl",
+      "output_bytes": 1316,
+      "output_sha256": "16a3ec3dfc0bc58493045253e01cdb4c6b5f75210787353d437acd21aa35838e"
+    },
+    {
+      "case": "fix_pre_and_empty",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "558dca72f53d57998cdeb52fd9bc896a8c0ea489b8b1bf731bcd46c8a7bc2ed4",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_pre_and_empty/output.pl",
+      "output_bytes": 1251,
+      "output_sha256": "bd4df9084a701cd22f59b30ac38f4342a08120c95b982f1b17ac8a874e453e7f"
+    },
+    {
+      "case": "fix_pre_or_empty",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "f28d2718c173830eff9c342e2af311ecd3458249152809512b407d37c51d4753",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_pre_or_empty/output.pl",
+      "output_bytes": 1251,
+      "output_sha256": "bd4df9084a701cd22f59b30ac38f4342a08120c95b982f1b17ac8a874e453e7f"
+    },
+    {
+      "case": "fix_pre_forall_empty",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "6a17939fa06679c829507bb17604c852803bdbb19731293917c02188246dbe25",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_pre_forall_empty/output.pl",
+      "output_bytes": 1273,
+      "output_sha256": "097891995b49d3e16b6bbaa17188cf4642cbea4ef1ea09d8804e19c6698d5029"
+    },
+    {
+      "case": "fix_init_or_and",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "30f664d1673e52e3aebd3b6d035b33549695427991a69580d224b42bb2692773",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_init_or_and/output.pl",
+      "output_bytes": 1184,
+      "output_sha256": "2e60fae5d3de10de9b35c5c9e20c4262446d51d533f7d96c839f591a3356039b"
+    },
+    {
+      "case": "fix_init_nested_oneof",
+      "returncode": 0,
+      "stdout": "Converting pddl to pl\nOutput file: pddl2pl.pl\n\n\n",
+      "stderr": "",
+      "input_sha256": "3a120268edc47f924d220d42b0403b62d73a1d8bfc375feb89cea02d2efa6ae8",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes",
+      "output": "tests/converter_cases/fix_init_nested_oneof/output.pl",
+      "output_bytes": 1131,
+      "output_sha256": "e2b91f7c33f040cce216502de4985a50f2d8b1ec759c56c906754b9a0413beeb"
+    },
+    {
+      "case": "fix_derived_bad_type",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: syntax error at symbol \"-\" on line 1\n",
+      "input_sha256": "245fd4eb401a6ad0fffb4a8a516b046a5a3b6c7328f5f0fdc6997876da13d2cd",
+      "provenance": "Independent teammate fresh original executable probe; retained original stdout and output bytes"
+    }
+  ]
+}

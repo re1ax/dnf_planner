@@ -1,0 +1,19 @@
+:- dynamic executable/2, cpa_executable/2, causes/3, cpa_causes/3, cpa_initially/1.
+fluent(p).
+fluent(q).
+fluent(r).
+action(a).
+action(b).
+action(c).
+executable(a,[]).
+executable(b,[]).
+executable(c,[]).
+causes(a,[cpa_and(p)],[]).
+causes(b,[cpa_and(q)],[]).
+causes(c,[cpa_and(r)],[]).
+cpa_initially(neg(p)).
+cpa_initially(neg(q)).
+cpa_initially(neg(r)).
+unknown(nop).
+plan_goal(p).
+plan_goal(q).

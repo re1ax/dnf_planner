@@ -1,0 +1,12 @@
+{
+  "package": "swi-prolog-core",
+  "version": "9.2.9+dfsg-1.1build1",
+  "architecture": "amd64",
+  "source": "Ubuntu official archive; package metadata from apt-cache",
+  "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/swi-prolog/swi-prolog-core_9.2.9+dfsg-1.1build1_amd64.deb",
+  "sha256": "f0bca591d13b2a651038ab5b2a8b979e7878ac2696bed080764809c9505c093d",
+  "dependencies": ["libc6 >= 2.34", "libgmp10 >= 6.3.0", "libtinfo6 >= 6", "zlib1g >= 1.1.4"],
+  "license_notice": "SWI-COPYRIGHT.txt (complete upstream/distribution copyright and component licenses)",
+  "installation": "No system installation: dpkg-deb -x into runtime/linux-x64/root; local SWI_HOME_DIR and LD_LIBRARY_PATH per subprocess.",
+  "packaging": "Include this metadata, the official .deb and SWI-COPYRIGHT.txt; exclude generated root/ from ZIP. bootstrap_workspace.py recreates root/ offline."
+}

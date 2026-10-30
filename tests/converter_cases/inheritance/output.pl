@@ -1,0 +1,65 @@
+
+:- use_module(library(lists)).
+:- dynamic executable/2.
+:- dynamic cpa_executable/2.
+:- dynamic causes/3.
+:- dynamic cpa_causes/3.
+:- dynamic cpa_initially/1.
+
+%%%% Objects %%%%
+cpa_dog(cpa_a).
+cpa_cat(cpa_b).
+
+%%%% Constants %%%%
+
+%%%%  Types rules %%%%
+cpa_animal(X):- cpa_dog(X).
+cpa_animal(X):- cpa_cat(X).
+
+%%%% Predicates %%%%
+fluent(cpa_p(  X)):-
+	cpa_animal( X).
+
+fluent(cpa_q(  X)):-
+	cpa_dog( X).
+
+fluent(cpa_r).
+
+
+%%%% Actions %%%%
+action(cpa_act(  X)):-
+	cpa_animal( X).
+
+
+%%%% Preconditions %%%%
+executable(cpa_act(  X), [
+cpa_p( X) ]):-
+	cpa_animal( X).
+
+
+%%%% Effects %%%%
+causes(cpa_act(  X), [
+cpa_r ], 
+[]):-
+	cpa_animal( X).
+
+
+%%%% Inits %%%%
+cpa_initially(cpa_p(cpa_a)).
+cpa_initially(neg(X)) :- fluent(X), \+ cpa_initially(X), \+ unknown(X).
+unknown(X):- fluent(X),
+            findall(L, (cpa_initially(cpa_oneof(Y)), member(L,Y)), LUnk),
+            member(X, LUnk).
+unknown(X):- fluent(X), cpa_unknown(X).
+unknown(X) :- fluent(X), (cpa_initially(cpa_or(Y)),in_or(Y,X);
+          cpa_initially(cpa_or(Y,Z)), (in_or(Y,X);in_or(Z,X))), !.
+unknown(X) :- fluent(X), cpa_initially(cpa_oneof(ListBig)), member(ListSmall,ListBig),
+           member(X,ListSmall).
+in_or(X,X) :- !.
+in_or(neg(X),X) :- !.
+in_or(cpa_or(Y),X) :- in_or(Y,X).
+in_or(cpa_or(Y,Z),X) :- (in_or(Y,X);in_or(Z,X)).
+cpa_unknown(nop).
+
+%%%% Goals %%%%
+plan_goal(cpa_r).

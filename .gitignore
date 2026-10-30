@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Build outputs
+/build/
+/dnf
+/dnf.exe
+*.o
+*.obj
+*.pdb
+
+# Generated runs/runtime/test reports
+/runs/
+/dnf_run/
+/runtime/linux-x64/root/
+/preprocessor/evidence/
+/evidence/converter_differential.json
+
+# Editor/backup files
+.vscode/
+.idea/
+*.bak
+*.log
+*~
+.DS_Store
+Thumbs.db
